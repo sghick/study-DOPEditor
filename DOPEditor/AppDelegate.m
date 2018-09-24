@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <WECDataBase/WECDBManager.h>
+#import <SMRDB/SMRDB.h>
 #import "DOETabRootController.h"
 
 @interface AppDelegate ()
@@ -21,7 +21,8 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] init];
     
-    [[WECDBManager defaultDBManager] connectDatabaseWithName:@"demans"];
+
+    [[SMRFMDBManager sharedInstance] connectDatabaseWithName:@"demans"];
     
     DOETabRootController *root = [[DOETabRootController alloc] init];
     self.window.rootViewController = root;

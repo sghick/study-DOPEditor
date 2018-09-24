@@ -8,7 +8,7 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - "SMRDB (from `git@github.com:sghick/cmp-framework-SMRDB.git`, commit `d3d7d7c`)"
+  - "SMRDB (from `git@github.com:sghick/cmp-framework-SMRDB.git`, commit `f8ce5e8`)"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -17,12 +17,12 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   SMRDB:
-    :commit: d3d7d7c
+    :commit: f8ce5e8
     :git: "git@github.com:sghick/cmp-framework-SMRDB.git"
 
 CHECKOUT OPTIONS:
   SMRDB:
-    :commit: d3d7d7c
+    :commit: f8ce5e8
     :git: "git@github.com:sghick/cmp-framework-SMRDB.git"
 
 SPEC CHECKSUMS:
@@ -30,6 +30,6 @@ SPEC CHECKSUMS:
   SMRDB: 2bc44f86c9c326dcb8988e393b711d5bdab7e089
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 4461a2176cbc541ee38421fe002e2bf8c1db3acd
+PODFILE CHECKSUM: 0e5159cab82b60d59d3a3e9915abbb0c39d754c1
 
 COCOAPODS: 1.5.3

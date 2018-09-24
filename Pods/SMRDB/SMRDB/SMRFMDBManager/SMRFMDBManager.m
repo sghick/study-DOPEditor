@@ -7,6 +7,8 @@
 //
 
 #import "SMRFMDBManager.h"
+#import "SMRDBAdapter.h"
+#import "SMRYYModelParser.h"
 #import "FMDB.h"
 
 #define kDBLibVersion(dbPath) ([NSString stringWithFormat:@"kSMRDataBaseLibVersion_%@", dbPath])
@@ -31,6 +33,12 @@ static SMRFMDBManager *_sharedDBManager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedDBManager = [[SMRFMDBManager alloc] init];
+        if (![SMRDBAdapter shareInstance].dbManager) {
+            [SMRDBAdapter shareInstance].dbManager = _sharedDBManager;
+        }
+        if (![SMRDBAdapter shareInstance].dbParser) {
+            [SMRDBAdapter shareInstance].dbParser = [[SMRYYModelParser alloc] init];
+        }
     });
     return _sharedDBManager;
 }

@@ -11,6 +11,7 @@
 
 #import "SMRFMDBManager.h"
 #import "SMRYYModelParser.h"
+#import "SMRDBAdapter.h"
 
 #import "NSObject+SMRDB.h"
 
