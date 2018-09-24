@@ -1,8 +1,0 @@
-
-target "DOPEditor" do
-    platform:ios, '9.0'
-    use_frameworks!
-
-    pod 'WECDataBase', :git => 'git@git.shequan.com:ios/component-base-WECDataBase.git', :tag => '2.0.5'
-
-end
